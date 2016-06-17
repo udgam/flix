@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8214868D1D1365C8003E4D71 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8214868C1D1365C8003E4D71 /* DetailViewController.swift */; };
+		821486911D149937003E4D71 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821486901D149937003E4D71 /* ColorCell.swift */; };
 		825658BE1D11B977004B675C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825658BD1D11B977004B675C /* AppDelegate.swift */; };
 		825658C31D11B977004B675C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 825658C11D11B977004B675C /* Main.storyboard */; };
 		825658C51D11B977004B675C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 825658C41D11B977004B675C /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		1B3517643805D34D66F639B6 /* Pods-MovieViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieViewer/Pods-MovieViewer.release.xcconfig"; sourceTree = "<group>"; };
 		34A58F194F83B38A4B45C2C9 /* Pods_MovieViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8214868C1D1365C8003E4D71 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		821486901D149937003E4D71 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 		825658BA1D11B977004B675C /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		825658BD1D11B977004B675C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		825658C21D11B977004B675C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				825658D21D11F74A004B675C /* MovieCell.swift */,
+				821486901D149937003E4D71 /* ColorCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				825658CF1D11B9F8004B675C /* MoviesViewController.swift */,
+				8214868C1D1365C8003E4D71 /* DetailViewController.swift */,
 			);
 			name = "View Controller";
 			sourceTree = "<group>";
@@ -142,6 +148,7 @@
 				TargetAttributes = {
 					825658B91D11B977004B675C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HEPA56FFVZ;
 					};
 				};
 			};
@@ -232,6 +239,8 @@
 				825658BE1D11B977004B675C /* AppDelegate.swift in Sources */,
 				825658D01D11B9F8004B675C /* MoviesViewController.swift in Sources */,
 				825658D31D11F74A004B675C /* MovieCell.swift in Sources */,
+				8214868D1D1365C8003E4D71 /* DetailViewController.swift in Sources */,
+				821486911D149937003E4D71 /* ColorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,10 +354,13 @@
 			baseConfigurationReference = E81DBDB4315D7987B482087B /* Pods-MovieViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MovieViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.MovieViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.udgam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -357,10 +369,13 @@
 			baseConfigurationReference = 1B3517643805D34D66F639B6 /* Pods-MovieViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MovieViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.MovieViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.udgam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
